@@ -21,17 +21,17 @@
   color: #09d3ac;
 }
 h1.aboutheader {
-  font-family: 'Comic Sans MS', fantasy;
+  font-family: 'Comic Sans MS';
   font-size: 48px;
   color: rgb(44, 64, 220);
 }
 h2.aboutheader2 {
-  font-family: 'Comic Sans MS', fantasy;
+  font-family: 'Comic Sans MS';
   font-size: 30px;
   color: rgb(50, 135, 42);
 }
 p.aboutcontainer {
-  font-family: 'Comic Sans MS', fantasy;
+  font-family: 'Comic Sans MS';
   font-size: 21px;
 }
 
@@ -73,7 +73,7 @@ p.aboutcontainer {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   font-size: 25px;
-  font-family: 'Comic Sans MS', fantasy;
+  font-family: 'Comic Sans MS';
   
 }
 .sidelinks2{
@@ -83,7 +83,7 @@ p.aboutcontainer {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   font-size: 25px;
-  font-family: 'Comic Sans MS', fantasy;
+  font-family: 'Comic Sans MS';
   color: rgb(99, 142, 194);
   
 }
@@ -98,7 +98,7 @@ p.aboutcontainer {
 .projectsheader{
   margin-top: 23%;
   margin-left: centered;
-  font-family: 'Comic Sans MS', fantasy;
+  font-family: 'Comic Sans MS';
   font-size: 32px;
   color: rgb(226, 19, 19);
 }
@@ -151,7 +151,7 @@ p.aboutcontainer {
 .projectsheadercontact{
   margin-top: 25%;
   margin-left: centered;
-  font-family: 'Comic Sans MS', fantasy;
+  font-family: 'Comic Sans MS';
   font-size: 32px;
   color: rgb(226, 19, 19);
 }
@@ -249,7 +249,7 @@ p.aboutcontainer {
 .techHeader{
   margin-top: 25%;
   margin-left: centered;
-  font-family: 'Comic Sans MS', fantasy;
+  font-family: 'Comic Sans MS';
   font-size: 32px;
   color: rgb(226, 19, 19);
 }
