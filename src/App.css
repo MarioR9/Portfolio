@@ -1,0 +1,411 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+h1.aboutheader {
+  font-family: 'Comic Sans MS', fantasy;
+  font-size: 48px;
+  color: rgb(44, 64, 220);
+}
+h2.aboutheader2 {
+  font-family: 'Comic Sans MS', fantasy;
+  font-size: 30px;
+  color: rgb(50, 135, 42);
+}
+p.aboutcontainer {
+  font-family: 'Comic Sans MS', fantasy;
+  font-size: 21px;
+}
+
+.aboutContainer{
+  max-width: 40%;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.aboutBackground{
+ background-color: transparent;
+}
+
+.imageHeader{
+  border-radius: 50%;
+  max-width: 30%;
+  margin-top: -10%;
+  margin-left: 54%;
+  border: dashed 5px rgb(76, 201, 22);
+  transition: border-width 0.2s linear;
+}
+
+
+.imageHeader:hover { 
+  border-width: 10px;
+}
+
+
+.navbarlogo{
+  margin-top: 0%;
+  margin-left: 5%;
+}
+
+
+.sidelinks{
+  max-width: 7%;
+  margin-top: -20%;
+  margin-left: 5%;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 25px;
+  font-family: 'Comic Sans MS', fantasy;
+  
+}
+.sidelinks2{
+  max-width: 7%;
+  margin-top: 2%;
+  margin-left: 5%;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 25px;
+  font-family: 'Comic Sans MS', fantasy;
+  color: rgb(99, 142, 194);
+  
+}
+
+.projectContainer{
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 1600px;
+}
+
+.projectsheader{
+  margin-top: 23%;
+  margin-left: centered;
+  font-family: 'Comic Sans MS', fantasy;
+  font-size: 32px;
+  color: rgb(226, 19, 19);
+}
+.containerBorder{
+  border: solid;
+  color: red;
+}
+
+
+
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(2, 171, 22);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.projectsheadercontact{
+  margin-top: 25%;
+  margin-left: centered;
+  font-family: 'Comic Sans MS', fantasy;
+  font-size: 32px;
+  color: rgb(226, 19, 19);
+}
+
+.containerContact{
+  margin-left: 55%;
+  margin-bottom: -15%;
+  color: red;
+  max-width: 30%;
+  max-height: 90%;
+}
+
+.inputfontsize{
+  font-size: 18px;
+}
+
+.containerContactMsg{
+  margin-left: 15%;
+  margin-top: 5%;
+  max-width: 30%;
+  color: rgb(32, 42, 132);
+}
+
+.linkstoSocial{
+  margin-top: 10%;
+  border: solid;
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+
+.wrapper {
+  display: flex;
+  margin-left: 50%;
+  justify-content: space-around;
+  align-items: center;
+  width: 0%;
+  background-image: linear-gradient(to bottom right, rgba(129, 194, 222, 1), rgba(79, 146, 172, 1));
+  transition: all 0.4s ease-out;
+}
+.wrapper__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+.social-link--linkedin {
+  color: #2d76b0;
+}
+.social-link--github {
+  color: #000;
+}
+
+.social-link .social-svg {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.social-link .social-svg .social-group__icon {
+  fill: #191308;
+  transition: all 0.2s;
+}
+.social-link .social-svg .social-group__inner-circle {
+  fill: transparent;
+  transition: all 0.2s;
+}
+.social-link .social-svg .social-group__outline {
+  stroke: #191308;
+  transform-origin: 50% 50%;
+  transition: all 0.2s;
+}
+.social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
+  fill: #fffbfa;
+  transition: all 0.45s;
+}
+.social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
+  fill: currentColor;
+  transition: all 0.45s;
+}
+.social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
+  fill: url(#simpleInsta) !important;
+}
+.social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
+  stroke: currentColor;
+  transform: scale(1.1);
+  transition: all 0.45s;
+}
+
+.techgrid{
+  margin-top: 18%;
+ 
+}
+
+.techHeader{
+  margin-top: 25%;
+  margin-left: centered;
+  font-family: 'Comic Sans MS', fantasy;
+  font-size: 32px;
+  color: rgb(226, 19, 19);
+}
+.techContainer{
+  margin-top: 8%;
+  max-width: 60%;
+  max-width: 20%;
+}
+
+.techGridLogos {
+  position: relative;
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 1px;
+  grid-row-gap: 12px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.techLogo:hover {
+  opacity: 1.0;
+  filter: grayscale(0%);
+}
+.techLogo{
+  max-width: 200px;
+  align-content: center;
+  max-height: 160px;
+  opacity: 0.5;
+  filter: grayscale(70%);
+}
+
+.spotify{
+  max-width: 200px;
+  align-content: center;
+  max-height: 160px;
+  opacity: 0.5;
+  filter: grayscale(70%);
+}
+.spotify:hover {
+  opacity: 1.0;
+  filter: grayscale(0%);
+}
+
+.translatemeContentModal{
+  font-size: 20px;
+}
+
+
+
+.techGridLogosTranslatMe {
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 1px;
+  grid-row-gap: 12px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.techLogoTranslatMe:hover {
+  opacity: 1.0;
+  filter: grayscale(0%);
+}
+.techLogoTranslatMe{
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.5;
+  filter: grayscale(70%);
+}
+
+.dimmed.dimmable > .ui.animating.dimmer, .dimmed.dimmable > .ui.visible.dimmer, .ui.active.dimmer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ui.modal,
+.ui.active.modal {
+  margin: 0 auto!important;
+  top: auto !important;
+  left: auto !important;
+  transform-origin: center !important;
+  transition: all ease .5s;
+}
+
+
+.techLogoTranslatMejs:hover {
+  opacity: 1.0;
+  filter: grayscale(0%);
+}
+.techLogoTranslatMejs{
+  opacity: 0.5;
+  filter: grayscale(70%);
+  display: block;
+  margin-left: -25%;
+  margin-top: 10%;
+  width: 150%;
+}
+
+
+
+
+
+
+#mySidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(223, 237, 224);
+  overflow-x: auto;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+#mySidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #202320;
+  display: block;
+  transition: 0.3s
+}
+
+#mySidenav a:hover,
+#mySidenav .offcanvas a:focus {
+  color: #3cc43a;
+}
+
+#mySidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 55px;
+  margin-left: 50px;
+}
+
+body {
+  height: 200em;
+  position: relative;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
