@@ -2,6 +2,8 @@ import React from 'react'
 import Textarea from 'muicss/lib/react/textarea';
 import Input from 'muicss/lib/react/input';
 import { Button } from 'react-bootstrap';
+import swal from 'sweetalert'
+
 
 export default class Contact extends React.Component{
     constructor(){
@@ -60,6 +62,7 @@ export default class Contact extends React.Component{
         fetch('https://api.emailjs.com/api/v1.0/email/send', options)
             .then((httpResponse) => {
                 if (httpResponse.ok) {
+                    swal("Thank you", 'Your message is sent!', "success");
                     console.log('Your mail is sent!');//add alert msg
                 } else {
                     return httpResponse.text()
@@ -67,6 +70,7 @@ export default class Contact extends React.Component{
                 }
             })
             .catch((error) => {
+                swal("Sorry", 'Something went wrong', "error");
                 console.log('Oops... ' + error);//add alert msg
             });
     }  
