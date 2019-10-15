@@ -32,12 +32,15 @@ export default class Contact extends React.Component{
 
 
     handleSend=()=>{
+        
         const API_KEY = process.env.REACT_APP_PORTFOLIO_API_KEY;
+        const TID = process.env.REACT_APP_TID_API_KEY;
+        const TEMPID = process.env.REACT_APP_TEMID_API_KEY;
 
         let params = {
             user_id: API_KEY,
-            service_id: 'gmail',
-            template_id: 'GmailTemplate4009',
+            service_id: TID,
+            template_id: TEMPID,
             template_params: {
                 message_html: this.state.feedback, 
                 from_name: this.state.name, 
