@@ -85,7 +85,9 @@ export default class Projects extends React.Component{
                     <Contact/>
                     </ScrollableAnchor>
                 </div>
-                
+                <div>
+                © 2019 | Mario Rodriguez All rights reserved
+                </div>
             </div>
         )
     }
