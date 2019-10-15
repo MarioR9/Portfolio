@@ -7,7 +7,6 @@ import Tonester from './tonester.js'
 import { Embed, Modal, Popup } from 'semantic-ui-react'
 import './App.css';
 
-
 const style = {
   borderRadius: 40,
   opacity: 1.7,

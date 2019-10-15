@@ -2,6 +2,7 @@ import React from 'react'
 import Textarea from 'muicss/lib/react/textarea';
 import Input from 'muicss/lib/react/input';
 import { Button } from 'react-bootstrap';
+
 export default class Contact extends React.Component{
     constructor(){
         super()
@@ -29,28 +30,46 @@ export default class Contact extends React.Component{
             console.log('feedback' + e.currentTarget.value)
     }
 
-    handleSubmit=()=>{
-        const templateId = 'GmailTemplate4009';
-    
-        this.sendFeedback(templateId, {message_html: this.state.feedback, 
-            from_name: this.state.name, 
-            reply_to: this.state.email})
-  }
-    
-      sendFeedback=(templateId, variables)=>{
-        window.emailjs.send(
-          'gmail', templateId,
-          variables
-          ).then(res => {
-            console.log(`Email successfully sent!`)
-          })
-          // Handle errors here however you like, or use a React error boundary
-          .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
-      }
 
+    handleSend=()=>{
+        const API_KEY = process.env.REACT_APP_PORTFOLIO_API_KEY;
+
+        let params = {
+            user_id: API_KEY,
+            service_id: 'gmail',
+            template_id: 'GmailTemplate4009',
+            template_params: {
+                message_html: this.state.feedback, 
+                from_name: this.state.name, 
+                reply_to: this.state.email}
+        };
+     
+        let headers = {
+            "Content-type": "application/json"
+        };
+     
+        let options = {
+            method: 'POST',
+            headers: headers,
+            body: JSON.stringify(params)
+        };
+     
+        fetch('https://api.emailjs.com/api/v1.0/email/send', options)
+            .then((httpResponse) => {
+                if (httpResponse.ok) {
+                    console.log('Your mail is sent!');//add alert msg
+                } else {
+                    return httpResponse.text()
+                        .then(text => Promise.reject(text));
+                }
+            })
+            .catch((error) => {
+                console.log('Oops... ' + error);//add alert msg
+            });
+    }  
 
     render(){
-
+        
         return(
             
             <div>
@@ -61,7 +80,7 @@ export default class Contact extends React.Component{
                     <Input onChange={this.handleNameHandling} placeholder="Enter Full Name" />
                     <Input onChange={this.handleEmailHandling} placeholder="Enter Email" />
                     <Textarea onChange={this.handleMsgHandling} placeholder="How Can I Help You" />
-                    <Button onClick={this.handleSubmit} variant="outline-success">Let's Work Together</Button>
+                    <Button onClick={this.handleSend} variant="outline-success">Let's Work Together</Button>
                 </div>
 
                 <div class="containerContactMsg">
