@@ -1,12 +1,16 @@
 .App {
+  display: flex;
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
+  display: flex;
   height: 40vmin;
 }
 
 .App-header {
+  display: flex;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -18,24 +22,31 @@
 }
 
 .App-link {
+  display: flex;
   color: #09d3ac;
 }
 h1.aboutheader {
-  font-family: 'Comic Sans MS';
+  display: flex;
+  display: flex;
+  font-family: 'Comic Sans MS'
   font-size: 48px;
   color: rgb(44, 64, 220);
 }
 h2.aboutheader2 {
-  font-family: 'Comic Sans MS';
+  display: flex;
+  font-family: 'Comic Sans MS'
   font-size: 30px;
   color: rgb(50, 135, 42);
 }
 p.aboutcontainer {
-  font-family: 'Comic Sans MS';
+  display: flex;
+  display: flex;
+  font-family: 'Comic Sans MS'
   font-size: 21px;
 }
 
 .aboutContainer{
+  display: flex;
   max-width: 40%;
   margin-top: 5%;
   margin-left: 10%;
@@ -46,6 +57,7 @@ p.aboutcontainer {
 }
 
 .imageHeader{
+  display: flex;
   border-radius: 50%;
   max-width: 30%;
   margin-top: -10%;
@@ -55,40 +67,46 @@ p.aboutcontainer {
 }
 
 
-.imageHeader:hover { 
+.imageHeader:hover {
+  display: flex; 
   border-width: 10px;
+  display: flex;
 }
 
 
 .navbarlogo{
+  display: flex;
   margin-top: 0%;
   margin-left: 5%;
 }
 
 
 .sidelinks{
+  display: flex;
   max-width: 7%;
   margin-top: -20%;
   margin-left: 5%;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   font-size: 25px;
-  font-family: 'Comic Sans MS';
+  font-family: 'Comic Sans MS'
   
 }
 .sidelinks2{
+  display: flex;
   max-width: 7%;
   margin-top: 2%;
   margin-left: 5%;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   font-size: 25px;
-  font-family: 'Comic Sans MS';
+  font-family: 'Comic Sans MS'
   color: rgb(99, 142, 194);
   
 }
 
 .projectContainer{
+  display: flex;
   margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
@@ -96,14 +114,16 @@ p.aboutcontainer {
 }
 
 .projectsheader{
+  display: flex;
   margin-top: 23%;
   margin-left: centered;
-  font-family: 'Comic Sans MS';
+  font-family: 'Comic Sans MS'
   font-size: 32px;
   color: rgb(226, 19, 19);
 }
 .containerBorder{
   border: solid;
+  display: flex;
   color: red;
 }
 
@@ -112,6 +132,8 @@ p.aboutcontainer {
 
 
 .image {
+  display: flex;
+  display: flex;
   display: block;
   width: 100%;
   height: 100%;
@@ -119,6 +141,8 @@ p.aboutcontainer {
 }
 
 .overlay {
+  display: flex;
+  display: flex;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -132,10 +156,13 @@ p.aboutcontainer {
 }
 
 .container:hover .overlay {
+  display: flex;
   opacity: 1;
+  display: flex;
 }
 
 .text {
+  display: flex;
   color: rgb(255, 255, 255);
   font-size: 35px;
   position: absolute;
@@ -151,7 +178,7 @@ p.aboutcontainer {
 .projectsheadercontact{
   margin-top: 25%;
   margin-left: centered;
-  font-family: 'Comic Sans MS';
+  font-family: 'Comic Sans MS'
   font-size: 32px;
   color: rgb(226, 19, 19);
 }
@@ -187,6 +214,7 @@ p.aboutcontainer {
 
 .wrapper {
   display: flex;
+  display: flex;
   margin-left: 50%;
   justify-content: space-around;
   align-items: center;
@@ -196,46 +224,57 @@ p.aboutcontainer {
 }
 .wrapper__links {
   display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 70%;
 }
 .social-link--linkedin {
+  display: flex;
   color: #2d76b0;
 }
 .social-link--github {
+  display: flex;
   color: #000;
 }
 
 .social-link .social-svg {
+  display: flex;
   width: 4.8rem;
   height: 4.8rem;
 }
 .social-link .social-svg .social-group__icon {
+  display: flex;
   fill: #191308;
   transition: all 0.2s;
 }
 .social-link .social-svg .social-group__inner-circle {
+  display: flex;
   fill: transparent;
   transition: all 0.2s;
 }
 .social-link .social-svg .social-group__outline {
+  display: flex;
   stroke: #191308;
   transform-origin: 50% 50%;
   transition: all 0.2s;
 }
 .social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
+  display: flex;
   fill: #fffbfa;
   transition: all 0.45s;
 }
 .social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
+  display: flex;
   fill: currentColor;
   transition: all 0.45s;
 }
 .social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
+  display: flex;
   fill: url(#simpleInsta) !important;
 }
 .social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
+  display: flex;
   stroke: currentColor;
   transform: scale(1.1);
   transition: all 0.45s;
@@ -249,7 +288,7 @@ p.aboutcontainer {
 .techHeader{
   margin-top: 25%;
   margin-left: centered;
-  font-family: 'Comic Sans MS';
+  font-family: 'Comic Sans MS'
   font-size: 32px;
   color: rgb(226, 19, 19);
 }
@@ -260,6 +299,7 @@ p.aboutcontainer {
 }
 
 .techGridLogos {
+  display: flex;
   position: relative;
   z-index: 1;
   display: -ms-grid;
@@ -276,6 +316,7 @@ p.aboutcontainer {
 }
 
 .techLogo:hover {
+  display: flex;
   opacity: 1.0;
   filter: grayscale(0%);
 }
@@ -295,6 +336,7 @@ p.aboutcontainer {
   filter: grayscale(70%);
 }
 .spotify:hover {
+  display: flex;
   opacity: 1.0;
   filter: grayscale(0%);
 }
@@ -306,6 +348,7 @@ p.aboutcontainer {
 
 
 .techGridLogosTranslatMe {
+  display: flex;
   z-index: 1;
   display: -ms-grid;
   display: grid;
@@ -321,6 +364,7 @@ p.aboutcontainer {
 }
 
 .techLogoTranslatMe:hover {
+  display: flex;
   opacity: 1.0;
   filter: grayscale(0%);
 }
@@ -333,11 +377,13 @@ p.aboutcontainer {
 
 .dimmed.dimmable > .ui.animating.dimmer, .dimmed.dimmable > .ui.visible.dimmer, .ui.active.dimmer {
   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 .ui.modal,
 .ui.active.modal {
+  display: flex;
   margin: 0 auto!important;
   top: auto !important;
   left: auto !important;
@@ -347,6 +393,7 @@ p.aboutcontainer {
 
 
 .techLogoTranslatMejs:hover {
+  display: flex;
   opacity: 1.0;
   filter: grayscale(0%);
 }
@@ -365,6 +412,7 @@ p.aboutcontainer {
 
 
 #mySidenav {
+  display: flex;
   height: 100%;
   width: 20%;
   position: fixed;
@@ -378,6 +426,7 @@ p.aboutcontainer {
 }
 
 #mySidenav a {
+  display: flex;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -388,10 +437,12 @@ p.aboutcontainer {
 
 #mySidenav a:hover,
 #mySidenav .offcanvas a:focus {
+  display: flex;
   color: #3cc43a;
 }
 
 #mySidenav .closebtn {
+  display: flex;
   position: absolute;
   top: 0;
   right: 25px;
@@ -400,12 +451,16 @@ p.aboutcontainer {
 }
 
 body {
+  display: flex;
   height: 200em;
   position: relative;
 }
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  display: flex;
+  .sidenav {
+    display: flex;padding-top: 15px;}
+  .sidenav a {
+    display: flex;font-size: 18px;}
 }
 
 
