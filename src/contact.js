@@ -3,7 +3,7 @@ import Textarea from 'muicss/lib/react/textarea';
 import Input from 'muicss/lib/react/input';
 import { Button } from 'react-bootstrap';
 import swal from 'sweetalert'
-
+require('dotenv').config()
 
 export default class Contact extends React.Component{
     constructor(){
@@ -34,7 +34,6 @@ export default class Contact extends React.Component{
 
 
     handleSend=()=>{
-        
         const API_KEY = process.env.REACT_APP_PORTFOLIO_API_KEY;
         const TID = process.env.REACT_APP_TID_API_KEY;
         const TEMPID = process.env.REACT_APP_TEMID_API_KEY;
