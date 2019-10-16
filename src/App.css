@@ -68,7 +68,6 @@ p.aboutcontainer {
 
 
 .imageHeader:hover {
-  display: flex; 
   border-width: 10px;
   display: flex;
 }
