@@ -57,7 +57,7 @@ export default class Projects extends React.Component{
                 </div>
 
                 <div class="techgrid">
-                <h1 class="techHeader">Experienced with___ </h1>
+                <h1 class="techHeader">Created with___ </h1>
                 <div class="techGridLogos">
                     <div>
                     <img class="techLogo" src="/assets/js.png"/> 
