@@ -22,7 +22,7 @@ export default class Contact extends React.Component{
         this.setState({
             email: e.currentTarget.value
             })
-            console.log('email' + e.currentTarget.value)
+            
     }
 
     handleMsgHandling=(e)=>{
