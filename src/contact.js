@@ -16,7 +16,6 @@ export default class Contact extends React.Component{
         this.setState({
             name: e.currentTarget.value
             })
-            console.log('name' + e.currentTarget.value)
     }
 
     handleEmailHandling=(e)=>{
