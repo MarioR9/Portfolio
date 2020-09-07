@@ -29,7 +29,7 @@ export default class Contact extends React.Component{
         this.setState({
             feedback: e.currentTarget.value
             })
-            console.log('feedback' + e.currentTarget.value)
+           
     }
 
 
